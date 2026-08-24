@@ -1,12 +1,12 @@
-<div align="center">
-
-  <!-- Holographic / 3D Wave Banner Header -->
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,18,25&height=220&section=header&text=✨%20Hi,%20I'm%20Jiya%20Singh%20✨&fontSize=38&fontAlignY=38&animation=twinkling&fontColor=ffffff&desc=Crafting%20Scalable,%20Modern%20%26%20Intelligent%20Software%20Experiences&descSize=18&descAlignY=62" width="100%" alt="Header Banner" />
-
-  <!-- Animated Typing SVG -->
-  <a href="https://github.com/jiyasingh5725">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=1000&color=00F5D4&center=true&vCenter=true&multiline=true&width=650&height=95&lines=🚀+Full+Stack+Software+Developer;💡+Transforming+Ideas+into+Elegant+Code;🧠+Passionate+About+AI,+Cloud+%26+Modern+Web;🌐+Open+Source+Contributor+%26+Lifelong+Learner" alt="Typing SVG" />
-  </a>
+  <!-- Glowing 3D Tech Header & Animated Typing -->
+  <p align="center">
+    <img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=700&size=34&duration=2500&pause=1000&color=00F5D4&center=true&vCenter=true&multiline=true&width=850&height=120&lines=%E2%9C%A8+Hi%2C+I'm+Jiya+Singh+%E2%9C%A8;%F0%9F%9A%80+Full+Stack+Software+Developer;%F0%9F%92%BB+Crafting+Modern+%26+Intelligent+Web+Apps;%F0%9F%94%A5+Turning+Vision+Into+Scalable+Code" alt="Jiya Singh - Intro Animation" />
+  </p>
+  
+  <!-- Interactive 3D Dev Illustration Banner -->
+  <p align="center">
+    <img src="https://raw.githubusercontent.com/jiyasingh5725/jiyasingh5725/main/header.svg" width="100%" alt="" onerror="this.style.display='none'" />
+  </p>
 
   <!-- Profile Views & Badges -->
   <p align="center">
@@ -170,12 +170,15 @@ const jiyaSingh = {
 
 ---
 
-<!-- Footer Banner -->
+<!-- Footer -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=25,18,11,6&height=120&section=footer" width="100%" alt="Footer Banner" />
+  <p align="center">
+    <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,18,25&height=6&section=footer" width="100%" alt="" onerror="this.style.display='none'" />
+  </p>
 
   <p align="center">
-    <b>⭐ Star my repositories & connect with me if you find my work interesting! ⭐</b><br/>
-    <i>Designed with passion & precision by <b>Jiya Singh</b></i>
+    <b>⭐ Star my repositories &amp; connect with me if you find my work interesting! ⭐</b><br/>
+    <i>Crafted with 💖 &amp; passion by <b>Jiya Singh</b></i>
   </p>
 </div>
+

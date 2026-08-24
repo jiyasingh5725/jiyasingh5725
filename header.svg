@@ -1,0 +1,107 @@
+<svg fill="none" viewBox="0 0 900 180" width="100%" height="180" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        .container {
+          background: linear-gradient(135deg, #0d1117 0%, #161b22 50%, #0d1117 100%);
+          border: 1px solid rgba(0, 245, 212, 0.3);
+          border-radius: 16px;
+          box-shadow: 0 8px 32px 0 rgba(0, 245, 212, 0.15), inset 0 0 15px rgba(255, 0, 127, 0.1);
+          padding: 24px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+          color: #ffffff;
+          overflow: hidden;
+          position: relative;
+        }
+
+        .glow-sphere {
+          position: absolute;
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          filter: blur(50px);
+          opacity: 0.4;
+          animation: float 6s ease-in-out infinite alternate;
+        }
+        .sphere-1 { background: #00F5D4; top: -20px; left: -20px; }
+        .sphere-2 { background: #FF007F; bottom: -20px; right: -20px; animation-delay: -3s; }
+
+        @keyframes float {
+          0% { transform: translate(0, 0) scale(1); }
+          100% { transform: translate(30px, 20px) scale(1.15); }
+        }
+
+        .left-content {
+          z-index: 1;
+        }
+
+        .badge {
+          display: inline-block;
+          background: rgba(0, 245, 212, 0.12);
+          border: 1px solid #00F5D4;
+          color: #00F5D4;
+          padding: 4px 12px;
+          border-radius: 20px;
+          font-size: 12px;
+          font-weight: 600;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          margin-bottom: 8px;
+        }
+
+        .title {
+          font-size: 28px;
+          font-weight: 800;
+          margin: 0 0 6px 0;
+          background: linear-gradient(90deg, #FFFFFF, #00F5D4, #FF007F);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+          font-size: 14px;
+          color: #8b949e;
+          margin: 0;
+        }
+
+        .code-box {
+          z-index: 1;
+          background: rgba(13, 17, 23, 0.85);
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          border-radius: 10px;
+          padding: 12px 18px;
+          font-family: 'Fira Code', monospace;
+          font-size: 13px;
+          color: #00F5D4;
+          box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+        }
+        .code-keyword { color: #FF007F; }
+        .code-string { color: #FEE440; }
+        .code-comment { color: #8b949e; }
+      </style>
+
+      <div class="container">
+        <div class="glow-sphere sphere-1"></div>
+        <div class="glow-sphere sphere-2"></div>
+
+        <div class="left-content">
+          <div class="badge">✨ Software Engineer &amp; Creator</div>
+          <h1 class="title">Jiya Singh</h1>
+          <p class="subtitle">Building scalable systems, intelligent web apps &amp; aesthetic interfaces 🚀</p>
+        </div>
+
+        <div class="code-box">
+          <div><span class="code-keyword">const</span> dev = {</div>
+          <div>&nbsp;&nbsp;name: <span class="code-string">'Jiya Singh'</span>,</div>
+          <div>&nbsp;&nbsp;role: <span class="code-string">'Full Stack &amp; AI'</span>,</div>
+          <div>&nbsp;&nbsp;status: <span class="code-string">'Open to Collab'</span></div>
+          <div>};</div>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>
