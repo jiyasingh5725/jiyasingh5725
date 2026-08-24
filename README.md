@@ -112,29 +112,13 @@
 <div align="center">
   <h3>📊 Telemetry &amp; Real-Time Analytics</h3>
 
-  <!-- Row 1: Core Stats + Streak Counter -->
-  <table border="0">
-    <tr>
-      <td>
-        <img src="https://github-readme-stats.vercel.app/api?username=jiyasingh5725&show_icons=true&theme=radical&hide_border=true&title_color=00F5D4&icon_color=FF007F&text_color=F8F8F2&bg_color=07090E" alt="GitHub Stats" width="410" />
-      </td>
-      <td>
-        <img src="https://github-readme-streak-stats.herokuapp.com/?user=jiyasingh5725&theme=radical&hide_border=true&background=07090E&ring=00F5D4&fire=FF007F&currStreakLabel=00F5D4" alt="Streak Stats" width="395" />
-      </td>
-    </tr>
-  </table>
+  <!-- Bespoke Telemetry & Skill Distribution Cards -->
+  <img src="https://raw.githubusercontent.com/jiyasingh5725/jiyasingh5725/main/telemetry-stats.svg" width="100%" alt="Telemetry & Stats" />
 
-  <!-- Row 2: Top Languages + Dynamic Activity Graph -->
-  <table border="0">
-    <tr>
-      <td>
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jiyasingh5725&layout=compact&theme=radical&hide_border=true&title_color=00F5D4&text_color=F8F8F2&bg_color=07090E" alt="Top Languages" width="390" />
-      </td>
-      <td>
-        <img src="https://github-readme-activity-graph.vercel.app/graph?username=jiyasingh5725&bg_color=07090E&color=00F5D4&line=FF007F&point=FEE440&area=true&hide_border=true" alt="Activity Graph" width="415" />
-      </td>
-    </tr>
-  </table>
+  <br/><br/>
+
+  <!-- Dynamic Contribution Activity Graph -->
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=jiyasingh5725&bg_color=07090E&color=00F5D4&line=FF007F&point=FEE440&area=true&hide_border=true" alt="Activity Graph" width="100%" />
 </div>
 
 <img src="https://raw.githubusercontent.com/jiyasingh5725/jiyasingh5725/main/cyber-divider.svg" width="100%" alt="Divider" />

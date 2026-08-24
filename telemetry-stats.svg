@@ -1,0 +1,236 @@
+<svg fill="none" viewBox="0 0 950 360" width="100%" height="360" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        .stats-wrapper {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 16px;
+          font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+          color: #e6edf3;
+          height: 360px;
+        }
+
+        .card {
+          background: #07090e;
+          border: 1px solid rgba(0, 245, 212, 0.25);
+          border-radius: 14px;
+          padding: 20px 24px;
+          box-shadow: 0 10px 30px rgba(0,0,0,0.6), inset 0 0 20px rgba(0, 245, 212, 0.05);
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          position: relative;
+          overflow: hidden;
+        }
+
+        .card-glow {
+          position: absolute;
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          filter: blur(40px);
+          opacity: 0.15;
+          pointer-events: none;
+        }
+        .glow-left { background: #00F5D4; top: -20px; right: -20px; }
+        .glow-right { background: #FF007F; bottom: -20px; left: -20px; }
+
+        .card-header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border-bottom: 1px solid rgba(255,255,255,0.08);
+          padding-bottom: 12px;
+        }
+
+        .card-title {
+          font-size: 15px;
+          font-weight: 700;
+          letter-spacing: 1px;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+        .title-cyan { color: #00F5D4; }
+        .title-pink { color: #FF007F; }
+
+        .card-badge {
+          font-size: 10px;
+          font-family: 'Fira Code', monospace;
+          background: rgba(255,255,255,0.05);
+          border: 1px solid rgba(255,255,255,0.1);
+          padding: 2px 8px;
+          border-radius: 4px;
+          color: #8b949e;
+        }
+
+        /* Stat rows */
+        .stat-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 14px;
+          margin: 14px 0;
+        }
+
+        .stat-box {
+          background: rgba(255,255,255,0.03);
+          border: 1px solid rgba(255,255,255,0.06);
+          border-radius: 10px;
+          padding: 10px 14px;
+        }
+
+        .stat-label {
+          font-size: 11px;
+          color: #8b949e;
+          margin-bottom: 4px;
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+        }
+
+        .stat-value {
+          font-size: 20px;
+          font-weight: 800;
+          font-family: 'Fira Code', monospace;
+        }
+        .val-cyan { color: #00F5D4; }
+        .val-pink { color: #FF007F; }
+        .val-yellow { color: #FEE440; }
+        .val-purple { color: #A78BFA; }
+
+        /* Language progress bars */
+        .lang-list {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          margin: 10px 0;
+        }
+
+        .lang-item {
+          display: flex;
+          flex-direction: column;
+          gap: 4px;
+        }
+
+        .lang-info {
+          display: flex;
+          justify-content: space-between;
+          font-size: 12px;
+          font-weight: 600;
+        }
+
+        .lang-bar {
+          width: 100%;
+          height: 6px;
+          background: rgba(255,255,255,0.08);
+          border-radius: 3px;
+          overflow: hidden;
+        }
+
+        .lang-fill {
+          height: 100%;
+          border-radius: 3px;
+        }
+        .fill-ts { width: 42%; background: #3178C6; box-shadow: 0 0 8px #3178C6; }
+        .fill-js { width: 28%; background: #F7DF1E; box-shadow: 0 0 8px #F7DF1E; }
+        .fill-py { width: 18%; background: #3776AB; box-shadow: 0 0 8px #3776AB; }
+        .fill-cpp { width: 12%; background: #00599C; box-shadow: 0 0 8px #00599C; }
+
+        .card-footer {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          font-size: 11px;
+          font-family: 'Fira Code', monospace;
+          color: #64748b;
+          border-top: 1px solid rgba(255,255,255,0.06);
+          padding-top: 10px;
+        }
+
+        .streak-highlight {
+          color: #00F5D4;
+          font-weight: bold;
+        }
+      </style>
+
+      <div class="stats-wrapper">
+        <!-- Card 1: GitHub Pro Telemetry -->
+        <div class="card">
+          <div class="card-glow glow-left"></div>
+          <div class="card-header">
+            <div class="card-title title-cyan">
+              <span>⚡</span> GITHUB TELEMETRY
+            </div>
+            <div class="card-badge">LIVE METRICS</div>
+          </div>
+
+          <div class="stat-grid">
+            <div class="stat-box">
+              <div class="stat-label">TOTAL COMMITS</div>
+              <div class="stat-value val-cyan">100%</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-label">ACTIVE STREAK</div>
+              <div class="stat-value val-pink">🔥 DAILY</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-label">REPO STATUS</div>
+              <div class="stat-value val-yellow">PUBLIC</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-label">CONTRIBUTIONS</div>
+              <div class="stat-value val-purple">PRO GRADE</div>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <span>COMMIT CADENCE: <span class="streak-highlight">REGULAR</span></span>
+            <span>RANK: <b style="color:#FF007F;">A+</b></span>
+          </div>
+        </div>
+
+        <!-- Card 2: Most Used Languages & Stack Breakdown -->
+        <div class="card">
+          <div class="card-glow glow-right"></div>
+          <div class="card-header">
+            <div class="card-title title-pink">
+              <span>🚀</span> TECH DISTRIBUTION
+            </div>
+            <div class="card-badge">PRODUCTION</div>
+          </div>
+
+          <div class="lang-list">
+            <div class="lang-item">
+              <div class="lang-info">
+                <span>TypeScript / JavaScript</span>
+                <span style="color:#00F5D4;">70%</span>
+              </div>
+              <div class="lang-bar"><div class="lang-fill fill-ts"></div></div>
+            </div>
+            <div class="lang-item">
+              <div class="lang-info">
+                <span>Python &amp; AI Frameworks</span>
+                <span style="color:#FEE440;">18%</span>
+              </div>
+              <div class="lang-bar"><div class="lang-fill fill-py"></div></div>
+            </div>
+            <div class="lang-item">
+              <div class="lang-info">
+                <span>C++ / Algorithms</span>
+                <span style="color:#FF007F;">12%</span>
+              </div>
+              <div class="lang-bar"><div class="lang-fill fill-cpp"></div></div>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <span>PRIMARY ECOSYSTEM: <b style="color:#00F5D4;">WEB &amp; AI</b></span>
+            <span>STATUS: <b style="color:#27c93f;">OPTIMIZED</b></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>
