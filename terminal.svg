@@ -1,0 +1,143 @@
+<svg fill="none" viewBox="0 0 950 360" width="100%" height="360" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        .terminal-container {
+          background: rgba(13, 17, 23, 0.95);
+          border: 1px solid rgba(0, 245, 212, 0.3);
+          border-radius: 14px;
+          box-shadow: 0 15px 35px rgba(0,0,0,0.6), inset 0 0 20px rgba(0, 245, 212, 0.05);
+          overflow: hidden;
+          font-family: 'Fira Code', 'Cascadia Code', monospace;
+          color: #e6edf3;
+          height: 360px;
+          display: flex;
+          flex-direction: column;
+        }
+
+        .terminal-header {
+          background: rgba(22, 27, 34, 0.9);
+          padding: 10px 16px;
+          display: flex;
+          align-items: center;
+          border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .traffic-lights {
+          display: flex;
+          gap: 8px;
+        }
+        .dot { width: 12px; height: 12px; border-radius: 50%; }
+        .dot-red { background: #ff5f56; }
+        .dot-yellow { background: #ffbd2e; }
+        .dot-green { background: #27c93f; }
+
+        .terminal-title {
+          flex: 1;
+          text-align: center;
+          font-size: 12px;
+          color: #8b949e;
+          letter-spacing: 1px;
+        }
+
+        .terminal-body {
+          padding: 18px 22px;
+          font-size: 13px;
+          line-height: 1.6;
+          overflow: hidden;
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+
+        .cmd-line {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+        .prompt-user { color: #00F5D4; font-weight: bold; }
+        .prompt-path { color: #A78BFA; }
+        .prompt-symbol { color: #FF007F; }
+        .cmd-text { color: #FFFFFF; font-weight: 600; }
+
+        .output-block {
+          padding-left: 12px;
+          border-left: 2px solid rgba(0, 245, 212, 0.3);
+          display: flex;
+          flex-direction: column;
+          gap: 4px;
+        }
+
+        .key { color: #00F5D4; }
+        .string { color: #FEE440; }
+        .bool { color: #FF007F; }
+        .bracket { color: #8b949e; }
+        
+        .cursor {
+          display: inline-block;
+          width: 8px;
+          height: 15px;
+          background: #00F5D4;
+          margin-left: 4px;
+          vertical-align: middle;
+          animation: blinkCursor 1s infinite;
+        }
+
+        @keyframes blinkCursor {
+          0%, 49% { opacity: 1; }
+          50%, 100% { opacity: 0; }
+        }
+
+        .tags-row {
+          display: flex;
+          gap: 8px;
+          margin-top: 4px;
+        }
+        .tech-pill {
+          background: rgba(0, 245, 212, 0.1);
+          border: 1px solid rgba(0, 245, 212, 0.4);
+          color: #00F5D4;
+          padding: 2px 8px;
+          border-radius: 4px;
+          font-size: 11px;
+        }
+      </style>
+
+      <div class="terminal-container">
+        <div class="terminal-header">
+          <div class="traffic-lights">
+            <div class="dot dot-red"></div>
+            <div class="dot dot-yellow"></div>
+            <div class="dot dot-green"></div>
+          </div>
+          <div class="terminal-title">jiya@archlinux: ~/projects/portfolio (zsh)</div>
+        </div>
+
+        <div class="terminal-body">
+          <div class="cmd-line">
+            <span class="prompt-user">jiya@core</span>:<span class="prompt-path">~/dev</span><span class="prompt-symbol">$</span>
+            <span class="cmd-text">fetch --profile jiya-singh --output=json</span>
+          </div>
+
+          <div class="output-block">
+            <div><span class="bracket">{</span></div>
+            <div>&nbsp;&nbsp;<span class="key">"name"</span>: <span class="string">"Jiya Singh"</span>,</div>
+            <div>&nbsp;&nbsp;<span class="key">"status"</span>: <span class="string">"Architecting Intelligent Apps &amp; Scalable Systems"</span>,</div>
+            <div>&nbsp;&nbsp;<span class="key">"core_stack"</span>: <span class="bracket">[</span><span class="string">"TypeScript"</span>, <span class="string">"React/Next.js"</span>, <span class="string">"Node.js"</span>, <span class="string">"Python"</span>, <span class="string">"AI/Agents"</span><span class="bracket">]</span>,</div>
+            <div>&nbsp;&nbsp;<span class="key">"focus_mode"</span>: <span class="bool">true</span>,</div>
+            <div>&nbsp;&nbsp;<span class="key">"open_for_opportunities"</span>: <span class="bool">true</span></div>
+            <div><span class="bracket">}</span></div>
+          </div>
+
+          <div class="cmd-line" style="margin-top: 4px;">
+            <span class="prompt-user">jiya@core</span>:<span class="prompt-path">~/dev</span><span class="prompt-symbol">$</span>
+            <span class="cmd-text">launch-mission --target="production" --creative=100%</span><span class="cursor"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>

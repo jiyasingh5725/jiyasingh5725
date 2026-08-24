@@ -1,0 +1,275 @@
+<svg fill="none" viewBox="0 0 1100 320" width="100%" height="320" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        @keyframes scanline {
+          0% { transform: translateY(-100%); }
+          100% { transform: translateY(1000%); }
+        }
+        @keyframes pulseGlow {
+          0%, 100% { opacity: 0.3; filter: blur(30px); transform: scale(1); }
+          50% { opacity: 0.7; filter: blur(45px); transform: scale(1.1); }
+        }
+        @keyframes float3D {
+          0%, 100% { transform: translateY(0px) rotateX(0deg) rotateY(0deg); }
+          50% { transform: translateY(-10px) rotateX(4deg) rotateY(-4deg); }
+        }
+        @keyframes radarSweep {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+        @keyframes blink {
+          0%, 49% { opacity: 1; }
+          50%, 100% { opacity: 0; }
+        }
+        @keyframes gradientShift {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        .hud-wrapper {
+          width: 100%;
+          height: 320px;
+          background: #07090e;
+          background-image: 
+            radial-gradient(circle at 20% 30%, rgba(0, 245, 212, 0.15) 0%, transparent 50%),
+            radial-gradient(circle at 80% 70%, rgba(255, 0, 127, 0.15) 0%, transparent 50%),
+            linear-gradient(rgba(0, 245, 212, 0.03) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(0, 245, 212, 0.03) 1px, transparent 1px);
+          background-size: 100% 100%, 100% 100%, 30px 30px, 30px 30px;
+          border: 1px solid rgba(0, 245, 212, 0.25);
+          border-radius: 20px;
+          position: relative;
+          overflow: hidden;
+          padding: 24px 32px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+          color: #fff;
+          box-shadow: 0 20px 50px rgba(0,0,0,0.8), inset 0 0 40px rgba(0, 245, 212, 0.08);
+          animation: float3D 6s ease-in-out infinite;
+        }
+
+        .hud-top-bar {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-bottom: 1px solid rgba(255,255,255,0.08);
+          padding-bottom: 12px;
+        }
+
+        .sys-id {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-size: 11px;
+          font-family: 'Fira Code', monospace;
+          letter-spacing: 2px;
+          color: #00F5D4;
+        }
+
+        .live-dot {
+          width: 8px;
+          height: 8px;
+          background: #00F5D4;
+          border-radius: 50%;
+          box-shadow: 0 0 10px #00F5D4;
+          animation: blink 1.2s infinite;
+        }
+
+        .hud-stats-pills {
+          display: flex;
+          gap: 12px;
+        }
+
+        .pill {
+          background: rgba(255,255,255,0.04);
+          border: 1px solid rgba(255,255,255,0.1);
+          padding: 4px 10px;
+          border-radius: 6px;
+          font-size: 10px;
+          font-family: 'Fira Code', monospace;
+          color: #8b949e;
+        }
+        .pill b { color: #00F5D4; }
+
+        .hud-main {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 10px;
+        }
+
+        .hero-text {
+          flex: 1;
+        }
+
+        .cyber-tag {
+          font-size: 11px;
+          font-weight: 700;
+          letter-spacing: 3px;
+          text-transform: uppercase;
+          background: linear-gradient(90deg, #00F5D4, #FF007F);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          margin-bottom: 8px;
+          display: flex;
+          align-items: center;
+          gap: 6px;
+        }
+
+        .hero-title {
+          font-size: 46px;
+          font-weight: 900;
+          letter-spacing: -1px;
+          line-height: 1.1;
+          margin-bottom: 10px;
+          background: linear-gradient(90deg, #FFFFFF 0%, #E2E8F0 50%, #00F5D4 100%);
+          background-size: 200% auto;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          animation: gradientShift 5s ease infinite;
+        }
+
+        .hero-desc {
+          font-size: 15px;
+          color: #94a3b8;
+          max-width: 580px;
+          line-height: 1.5;
+        }
+
+        .hud-hologram {
+          width: 140px;
+          height: 140px;
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .radar-circle {
+          position: absolute;
+          width: 130px;
+          height: 130px;
+          border: 1px dashed rgba(0, 245, 212, 0.4);
+          border-radius: 50%;
+        }
+
+        .radar-inner {
+          position: absolute;
+          width: 80px;
+          height: 80px;
+          border: 1px solid rgba(255, 0, 127, 0.5);
+          border-radius: 50%;
+        }
+
+        .radar-sweep {
+          position: absolute;
+          width: 130px;
+          height: 130px;
+          border-radius: 50%;
+          background: conic-gradient(from 0deg, rgba(0, 245, 212, 0.4) 0deg, transparent 60deg);
+          animation: radarSweep 4s linear infinite;
+        }
+
+        .hologram-center {
+          z-index: 2;
+          font-size: 28px;
+          filter: drop-shadow(0 0 10px #00F5D4);
+        }
+
+        .hud-bottom-bar {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-top: 1px solid rgba(255,255,255,0.08);
+          padding-top: 12px;
+          font-family: 'Fira Code', monospace;
+          font-size: 11px;
+          color: #64748b;
+        }
+
+        .metrics-group {
+          display: flex;
+          gap: 20px;
+        }
+        .metric-item {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+        }
+        .metric-bar {
+          width: 60px;
+          height: 6px;
+          background: rgba(255,255,255,0.1);
+          border-radius: 3px;
+          overflow: hidden;
+        }
+        .metric-fill {
+          height: 100%;
+          border-radius: 3px;
+        }
+        .fill-cyan { width: 92%; background: #00F5D4; box-shadow: 0 0 8px #00F5D4; }
+        .fill-pink { width: 88%; background: #FF007F; box-shadow: 0 0 8px #FF007F; }
+        .fill-purple { width: 95%; background: #7928CA; box-shadow: 0 0 8px #7928CA; }
+
+      </style>
+
+      <div class="hud-wrapper">
+        <div class="hud-top-bar">
+          <div class="sys-id">
+            <span class="live-dot"></span>
+            <span>SYSTEM://JIYA_SINGH.CORE // STATUS: ACTIVE</span>
+          </div>
+          <div class="hud-stats-pills">
+            <div class="pill">LOC: <b>INDIA</b></div>
+            <div class="pill">ENV: <b>PRODUCTION</b></div>
+            <div class="pill">BUILD: <b>v3.7.0-PRO</b></div>
+          </div>
+        </div>
+
+        <div class="hud-main">
+          <div class="hero-text">
+            <div class="cyber-tag">⚡ ARCHITECTING NEXT-GEN SOFTWARE</div>
+            <h1 class="hero-title">Jiya Singh</h1>
+            <p class="hero-desc">
+              Full Stack Engineer &amp; Creative Problem Solver bridging high-performance backend architectures with futuristic, responsive UI design &amp; intelligent AI systems.
+            </p>
+          </div>
+
+          <div class="hud-hologram">
+            <div class="radar-circle"></div>
+            <div class="radar-inner"></div>
+            <div class="radar-sweep"></div>
+            <div class="hologram-center">💎</div>
+          </div>
+        </div>
+
+        <div class="hud-bottom-bar">
+          <div class="metrics-group">
+            <div class="metric-item">
+              <span>FULL-STACK:</span>
+              <div class="metric-bar"><div class="metric-fill fill-cyan"></div></div>
+              <span style="color:#00F5D4;">94%</span>
+            </div>
+            <div class="metric-item">
+              <span>ALGORITHMS:</span>
+              <div class="metric-bar"><div class="metric-fill fill-pink"></div></div>
+              <span style="color:#FF007F;">90%</span>
+            </div>
+            <div class="metric-item">
+              <span>SYSTEM DESIGN:</span>
+              <div class="metric-bar"><div class="metric-fill fill-purple"></div></div>
+              <span style="color:#A78BFA;">95%</span>
+            </div>
+          </div>
+          <div>READY TO DEPLOY // 2026</div>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>
