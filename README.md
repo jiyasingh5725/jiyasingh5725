@@ -6,9 +6,7 @@
   <br/><br/>
 
   <!-- ==================== DYNAMIC MULTI-LINE TYPING SVG ==================== -->
-  <a href="https://github.com/jiyasingh5725">
-    <img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=700&size=28&duration=2500&pause=1000&color=00F5D4&center=true&vCenter=true&multiline=true&width=800&height=100&lines=⚡+Full+Stack+Architect+%7C+Modern+Web+Innovator;🧠+Building+Intelligent+AI-Powered+Applications;🚀+Transforming+Complex+Problems+into+Elegant+Code;🌟+Passionate+Open+Source+Creator+%26+Builder" alt="Typing Animation" />
-  </a>
+  <img src="https://raw.githubusercontent.com/jiyasingh5725/jiyasingh5725/main/typing.svg" width="100%" alt="Typing Animation" />
 
   <br/>
 

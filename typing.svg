@@ -1,0 +1,88 @@
+<svg fill="none" viewBox="0 0 850 70" width="100%" height="70" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style><![CDATA[
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        .type-container {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 70px;
+          font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+          font-size: 24px;
+          font-weight: 700;
+          text-align: center;
+        }
+
+        .type-wrapper {
+          display: inline-flex;
+          align-items: center;
+          position: relative;
+        }
+
+        .text-item {
+          display: inline-block;
+          background: linear-gradient(90deg, #00F5D4, #FF007F, #FEE440);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          animation: cycleText 12s infinite;
+          white-space: nowrap;
+        }
+
+        .cursor {
+          display: inline-block;
+          width: 3px;
+          height: 28px;
+          background: #00F5D4;
+          margin-left: 6px;
+          box-shadow: 0 0 10px #00F5D4;
+          animation: blink 0.8s infinite;
+        }
+
+        @keyframes blink {
+          0%, 49% { opacity: 1; }
+          50%, 100% { opacity: 0; }
+        }
+
+        @keyframes cycleText {
+          0%, 20% { opacity: 1; transform: translateY(0); }
+          22%, 25% { opacity: 0; transform: translateY(-8px); }
+          26%, 45% { opacity: 1; transform: translateY(0); }
+          47%, 50% { opacity: 0; transform: translateY(-8px); }
+          51%, 70% { opacity: 1; transform: translateY(0); }
+          72%, 75% { opacity: 0; transform: translateY(-8px); }
+          76%, 95% { opacity: 1; transform: translateY(0); }
+          97%, 100% { opacity: 0; transform: translateY(-8px); }
+        }
+
+        .text-item::before {
+          content: "⚡ Full Stack Architect | Modern Web Innovator";
+          animation: textSwap 12s infinite;
+        }
+
+        @keyframes textSwap {
+          0%, 22% {
+            content: "⚡ Full Stack Architect | Modern Web Innovator";
+          }
+          25%, 47% {
+            content: "🧠 Building Intelligent AI-Powered Applications";
+          }
+          50%, 72% {
+            content: "🚀 Transforming Complex Problems into Elegant Code";
+          }
+          75%, 98% {
+            content: "🌟 Passionate Open Source Creator & Builder";
+          }
+        }
+      ]]></style>
+
+      <div class="type-container">
+        <div class="type-wrapper">
+          <span class="text-item"></span>
+          <span class="cursor"></span>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>
