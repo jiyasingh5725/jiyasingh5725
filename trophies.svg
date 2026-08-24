@@ -1,0 +1,119 @@
+<svg fill="none" viewBox="0 0 950 170" width="100%" height="170" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        .trophy-grid {
+          display: grid;
+          grid-template-columns: repeat(6, 1fr);
+          gap: 12px;
+          font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+          color: #fff;
+          height: 170px;
+          align-items: center;
+        }
+
+        .badge-card {
+          background: #07090e;
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          border-radius: 14px;
+          padding: 16px 8px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          position: relative;
+          overflow: hidden;
+          transition: transform 0.3s ease;
+          box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+        }
+
+        .card-cyan { border-color: rgba(0, 245, 212, 0.4); box-shadow: 0 0 15px rgba(0, 245, 212, 0.15); }
+        .card-pink { border-color: rgba(255, 0, 127, 0.4); box-shadow: 0 0 15px rgba(255, 0, 127, 0.15); }
+        .card-yellow { border-color: rgba(254, 228, 64, 0.4); box-shadow: 0 0 15px rgba(254, 228, 64, 0.15); }
+        .card-purple { border-color: rgba(167, 139, 250, 0.4); box-shadow: 0 0 15px rgba(167, 139, 250, 0.15); }
+        .card-blue { border-color: rgba(59, 130, 246, 0.4); box-shadow: 0 0 15px rgba(59, 130, 246, 0.15); }
+        .card-orange { border-color: rgba(251, 146, 60, 0.4); box-shadow: 0 0 15px rgba(251, 146, 60, 0.15); }
+
+        .icon-circle {
+          width: 44px;
+          height: 44px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 22px;
+          margin-bottom: 8px;
+          background: rgba(255, 255, 255, 0.05);
+          border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .badge-title {
+          font-size: 11px;
+          font-weight: 800;
+          letter-spacing: 0.5px;
+          text-transform: uppercase;
+          margin-bottom: 4px;
+        }
+
+        .badge-rank {
+          font-size: 9px;
+          font-family: 'Fira Code', monospace;
+          padding: 2px 6px;
+          border-radius: 4px;
+          background: rgba(255, 255, 255, 0.08);
+          letter-spacing: 1px;
+        }
+
+        .rank-gold { color: #FEE440; border: 1px solid rgba(254, 228, 64, 0.4); }
+        .rank-diamond { color: #00F5D4; border: 1px solid rgba(0, 245, 212, 0.4); }
+        .rank-ruby { color: #FF007F; border: 1px solid rgba(255, 0, 127, 0.4); }
+      </style>
+
+      <div class="trophy-grid">
+        <!-- 1: Full Stack Architect -->
+        <div class="badge-card card-cyan">
+          <div class="icon-circle">💎</div>
+          <div class="badge-title" style="color: #00F5D4;">Full Stack</div>
+          <div class="badge-rank rank-diamond">TIER: MASTER</div>
+        </div>
+
+        <!-- 2: Code Shipper -->
+        <div class="badge-card card-pink">
+          <div class="icon-circle">🚀</div>
+          <div class="badge-title" style="color: #FF007F;">Fast Shipper</div>
+          <div class="badge-rank rank-ruby">TIER: S-RANK</div>
+        </div>
+
+        <!-- 3: AI & Next-Gen -->
+        <div class="badge-card card-yellow">
+          <div class="icon-circle">🧠</div>
+          <div class="badge-title" style="color: #FEE440;">AI Innovator</div>
+          <div class="badge-rank rank-gold">TIER: ELITE</div>
+        </div>
+
+        <!-- 4: Problem Solver -->
+        <div class="badge-card card-purple">
+          <div class="icon-circle">⚡</div>
+          <div class="badge-title" style="color: #A78BFA;">Algorithms</div>
+          <div class="badge-rank rank-diamond">TIER: PRO</div>
+        </div>
+
+        <!-- 5: Clean Architecture -->
+        <div class="badge-card card-blue">
+          <div class="icon-circle">🛡️</div>
+          <div class="badge-title" style="color: #60A5FA;">System Design</div>
+          <div class="badge-rank rank-diamond">TIER: EXPERT</div>
+        </div>
+
+        <!-- 6: Open Source Builder -->
+        <div class="badge-card card-orange">
+          <div class="icon-circle">🌟</div>
+          <div class="badge-title" style="color: #FB923C;">Open Source</div>
+          <div class="badge-rank rank-gold">TIER: BUILDER</div>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>

@@ -51,9 +51,7 @@
 <!-- ==================== 3D ACHIEVEMENTS & TROPHIES ==================== -->
 <div align="center">
   <h3>🏆 3D Developer Achievements &amp; Global Standings</h3>
-  <a href="https://github.com/jiyasingh5725">
-    <img src="https://github-profile-trophy.vercel.app/?username=jiyasingh5725&theme=radical&no-frame=true&no-bg=true&margin-w=4" alt="GitHub Trophies" />
-  </a>
+  <img src="https://raw.githubusercontent.com/jiyasingh5725/jiyasingh5725/main/trophies.svg" width="100%" alt="3D Achievements" />
 </div>
 
 <img src="https://raw.githubusercontent.com/jiyasingh5725/jiyasingh5725/main/cyber-divider.svg" width="100%" alt="Divider" />
