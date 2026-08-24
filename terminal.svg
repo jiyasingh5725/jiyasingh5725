@@ -122,13 +122,13 @@
             <span class="cmd-text">fetch --profile jiya-singh --output=json</span>
           </div>
 
-          <div class="output-block">
+          <div class="output-block" style="padding-left: 16px;">
             <div><span class="bracket">{</span></div>
-            <div>&nbsp;&nbsp;<span class="key">"name"</span>: <span class="string">"Jiya Singh"</span>,</div>
-            <div>&nbsp;&nbsp;<span class="key">"status"</span>: <span class="string">"Architecting Intelligent Apps &amp; Scalable Systems"</span>,</div>
-            <div>&nbsp;&nbsp;<span class="key">"core_stack"</span>: <span class="bracket">[</span><span class="string">"TypeScript"</span>, <span class="string">"React/Next.js"</span>, <span class="string">"Node.js"</span>, <span class="string">"Python"</span>, <span class="string">"AI/Agents"</span><span class="bracket">]</span>,</div>
-            <div>&nbsp;&nbsp;<span class="key">"focus_mode"</span>: <span class="bool">true</span>,</div>
-            <div>&nbsp;&nbsp;<span class="key">"open_for_opportunities"</span>: <span class="bool">true</span></div>
+            <div style="padding-left: 16px;"><span class="key">"name"</span>: <span class="string">"Jiya Singh"</span>,</div>
+            <div style="padding-left: 16px;"><span class="key">"status"</span>: <span class="string">"Architecting Intelligent Apps &amp; Scalable Systems"</span>,</div>
+            <div style="padding-left: 16px;"><span class="key">"core_stack"</span>: <span class="bracket">[</span><span class="string">"TypeScript"</span>, <span class="string">"React/Next.js"</span>, <span class="string">"Node.js"</span>, <span class="string">"Python"</span>, <span class="string">"AI/Agents"</span><span class="bracket">]</span>,</div>
+            <div style="padding-left: 16px;"><span class="key">"focus_mode"</span>: <span class="bool">true</span>,</div>
+            <div style="padding-left: 16px;"><span class="key">"open_for_opportunities"</span>: <span class="bool">true</span></div>
             <div><span class="bracket">}</span></div>
           </div>
 

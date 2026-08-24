@@ -96,9 +96,9 @@
 
         <div class="code-box">
           <div><span class="code-keyword">const</span> dev = {</div>
-          <div>&nbsp;&nbsp;name: <span class="code-string">'Jiya Singh'</span>,</div>
-          <div>&nbsp;&nbsp;role: <span class="code-string">'Full Stack &amp; AI'</span>,</div>
-          <div>&nbsp;&nbsp;status: <span class="code-string">'Open to Collab'</span></div>
+          <div style="padding-left: 14px;">name: <span class="code-string">'Jiya Singh'</span>,</div>
+          <div style="padding-left: 14px;">role: <span class="code-string">'Full Stack &amp; AI'</span>,</div>
+          <div style="padding-left: 14px;">status: <span class="code-string">'Open to Collab'</span></div>
           <div>};</div>
         </div>
       </div>
